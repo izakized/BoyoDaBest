@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Makanan Indonesia - Hotel</title>
+  <style>
+    /* Resetting some default styles */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Body styling */
+    body {
+      background: url('menu.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* Container for the menu */
+    .menu-container {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    /* Menu Title */
+    h1 {
+      text-align: center;
+      color: #FF5722; /* Orange color to match Indonesian cuisine theme */
+      margin-bottom: 30px;
+    }
+
+    /* Category heading */
+    h2 {
+      color: #333;
+      margin-top: 20px;
+      font-size: 1.5em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    /* Menu items */
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .menu-item-name {
+      font-size: 1.2em;
+      color: #555;
+      width: 40%;
+    }
+
+    .menu-item-price {
+      font-size: 1.2em;
+      color: #FF5722; /* Orange color for prices */
+    }
+
+    .menu-item-image {
+      width: 100px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    /* Styling for the price */
+    .price {
+      font-weight: bold;
+    }
+
+    /* Hover effect on menu items */
+    .menu-item:hover {
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+
+    /* Responsive styling */
+    @media (max-width: 600px) {
+      .menu-container {
+        width: 100%;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-item-name {
+        font-size: 1.1em;
+        width: auto;
+      }
+
+      .menu-item-price {
+        font-size: 1.1em;
+      }
+
+      .menu-item-image {
+        width: 80px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu Container -->
+  <div class="menu-container">
+    <h1>Menu Makanan Indonesia</h1>
+
+    <!-- Makanan Pembuka (Appetizers) -->
+    <h2>Makanan Pembuka</h2>
+    <div class="menu-item">
+      <img src="img/gado-gado.jpeg" alt="Gado-Gado" class="menu-item-image">
+      <span class="menu-item-name">Gado-Gado</span>
+      <span class="menu-item-price">Rp 25.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/Pisang goreng.jpeg" alt="Pisang Goreng" class="menu-item-image">
+      <span class="menu-item-name">Pisang Goreng</span>
+      <span class="menu-item-price">Rp 15.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/Sop Buntut.jpeg" alt="Sop Buntut" class="menu-item-image">
+      <span class="menu-item-name">Sop Buntut</span>
+      <span class="menu-item-price">Rp 40.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/martabak.jpeg" alt="Martabak" class="menu-item-image">
+      <span class="menu-item-name">Martabak Telur</span>
+      <span class="menu-item-price">Rp 20.000</span>
+    </div>
+
+    <!-- Makanan Utama (Main Courses) -->
+    <h2>Makanan Utama</h2>
+    <div class="menu-item">
+      <img src="img/nasgor.jpeg" alt="Nasi Goreng" class="menu-item-image">
+      <span class="menu-item-name">Nasi Goreng</span>
+      <span class="menu-item-price">Rp 30.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/Sate Madura.jpeg" alt="Sate Ayam" class="menu-item-image">
+      <span class="menu-item-name">Sate Ayam</span>
+      <span class="menu-item-price">Rp 35.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/Rendang.jpeg" alt="Rendang" class="menu-item-image">
+      <span class="menu-item-name">Rendang Daging</span>
+      <span class="menu-item-price">Rp 45.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/padang.jpeg" alt="Nasi Padang" class="menu-item-image">
+      <span class="menu-item-name">Nasi Padang</span>
+      <span class="menu-item-price">Rp 38.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/penyet.jpeg" alt="Ayam Penyet" class="menu-item-image">
+      <span class="menu-item-name">Ayam Penyet</span>
+      <span class="menu-item-price">Rp 32.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/ikan.jpeg" alt="Ikan Bakar" class="menu-item-image">
+      <span class="menu-item-name">Ikan Bakar</span>
+      <span class="menu-item-price">Rp 40.000</span>
+    </div>
+
+    <!-- Makanan Ringan (Snacks) -->
+    <h2>Makanan Ringan</h2>
+    <div class="menu-item">
+      <img src="img/cireng.jpeg" alt="Cireng" class="menu-item-image">
+      <span class="menu-item-name">Cireng</span>
+      <span class="menu-item-price">Rp 12.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/pastel.jpeg" alt="Pastel" class="menu-item-image">
+      <span class="menu-item-name">Pastel</span>
+      <span class="menu-item-price">Rp 8.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/kuecubit.jpeg" alt="Kue Cubit" class="menu-item-image">
+      <span class="menu-item-name">Kue Cubit</span>
+      <span class="menu-item-price">Rp 10.000</span>
+    </div>
+
+    <!-- Minuman (Beverages) -->
+    <h2>Minuman</h2>
+    <div class="menu-item">
+      <img src="img/teh.jpeg" alt="Es Teh Manis" class="menu-item-image">
+      <span class="menu-item-name">Es Teh Manis</span>
+      <span class="menu-item-price">Rp 8.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/jeruk.jpeg" alt="Jus Jeruk Segar" class="menu-item-image">
+      <span class="menu-item-name">Jus Jeruk Segar</span>
+      <span class="menu-item-price">Rp 12.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/kopi.jpeg" alt="Kopi Bali" class="menu-item-image">
+      <span class="menu-item-name">Kopi Bali</span>
+      <span class="menu-item-price">Rp 15.000</span>
+    </div>
+    <div class="menu-item">
+      <img src="img/Es Kelapa muda.jpeg" alt="Es Kelapa" class="menu-item-image">
+      <span class="menu-item-name">Es Kelapa Muda</span>
+      <span class="menu-item-price">Rp 18.000</span>
+    </div>
+
+    <a href="index.html" class="back-button">Back</a>
+
+  </div>
+
+</body>
+</html>

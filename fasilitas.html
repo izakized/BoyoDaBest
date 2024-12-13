@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Facilities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: red;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        header img {
+            height: 50px;
+            width: auto;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .facilities {
+            text-align: center;
+        }
+
+        .facility-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .facility {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .facility:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .facility img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .facility h3 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .facility p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .back-button {
+            display: block;
+            margin: 2rem auto;
+            padding: 0.8rem 1.5rem;
+            background: red;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Hotel Logo">
+        <h1>Our Facilities</h1>
+    </header>
+    <main>
+        <section class="facilities">
+            <div class="facility-list">
+                <div class="facility">
+                    <img src="img/spa.jpeg" alt="Luxury Spa">
+                    <h3>Spa & Wellness</h3>
+                    <p>Relax and rejuvenate at our luxury spa with professional treatments.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/kolam.jpeg" alt="Swimming Pool">
+                    <h3>Swimming Pool</h3>
+                    <p>Enjoy our outdoor infinity pool with a stunning view.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/gym.jpeg" alt="Fitness Center">
+                    <h3>Fitness Center</h3>
+                    <p>Stay fit with our state-of-the-art gym equipment.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/resto.jpeg" alt="Restaurant">
+                    <h3>Fine Dining</h3>
+                    <p>Experience gourmet cuisine prepared by top chefs.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/bar.jpeg" alt="Cocktail Bar">
+                    <h3>Cocktail Bar</h3>
+                    <p>Relax with premium drinks at our elegant cocktail bar.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/Conference Room.jpeg" alt="Conference Room">
+                    <h3>Conference Room</h3>
+                    <p>Host successful meetings with our fully equipped conference rooms.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/kids.jpeg" alt="Kids Play Area">
+                    <h3>Kids Play Area</h3>
+                    <p>A safe and fun environment for your children to enjoy.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/taman.jpeg" alt="Botanical Garden">
+                    <h3>Botanical Garden</h3>
+                    <p>Take a stroll through our lush and serene botanical gardens.</p>
+                </div>
+                <div class="facility">
+                    <img src="img/bioskop.jpeg" alt="Private Cinema">
+                    <h3>Private Cinema</h3>
+                    <p>Watch your favorite movies in our luxurious private cinema.</p>
+                </div>
+            </div>
+            <a href="index.html" class="back-button">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>
